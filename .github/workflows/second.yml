@@ -1,0 +1,10 @@
+name: second workflow
+on: push
+jobs: 
+    first-job:
+        runs-on: ubantu-latest
+        steps:
+           - name: hello this is git hub action
+             run: echo"hello this is github action"
+           - name: hello this is git hub action
+             run: echo"hello this is github action"
