@@ -1,10 +1,10 @@
-name: second workflow
-on: push
-jobs: 
-    first-job:
-        runs-on: ubuntu-latest
-        steps:
-           - name: hello this is git hub action
-             run: echo "hello this is github action"
-           - name: hello this is git hub action
-             run: echo "hello this is github action"
+name: third workflow
+on: workflow_dispatch
+jobs:
+ first-job:
+   runs-on: ubuntu-latest
+   steps:
+     - name: hello github action
+       run: echo "hello this is my first "
+     - name: hello github action
+       run: echo "hello this is my second"
